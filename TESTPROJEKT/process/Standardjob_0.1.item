@@ -162,7 +162,7 @@
     <elementParameter field="CHECK" name="USE_LOG_FILE" value="false"/>
     <elementParameter field="FILE" name="LOG_FILE_PATH" value="&quot;/var/log/talend/jobs/{project}/{jobName}_{jobInstanceId}.log&quot;" show="false"/>
     <elementParameter field="TEXT" name="LOG_FILE_LAYOUT" value="&quot;%-6r [%15.15t] %-5p %30.30c %x - [%X{origin}] %m%n&quot;" show="false"/>
-    <elementParameter field="CHECK" name="ADD_CONTEXT_TO_MDC" value="false"/>
+    <elementParameter field="CHECK" name="ADD_CONTEXT_TO_MDC" value="true"/>
     <elementParameter field="TEXT" name="HELPER_NAME" value=""/>
     <elementParameter field="CHECK" name="USE_DB_APPENDER" value="true"/>
     <elementParameter field="TEXT" name="PATTEN_LAYOUT" value="&quot;%m&quot;"/>
