@@ -133,9 +133,9 @@
     <elementParameter field="TEXT" name="CONTEXT_VAR_JOB_INSTANCE_ID" value=""/>
     <elementParameter field="TEXT" name="CONTEXT_VAR_PROCESS_INSTANCE_ID" value=""/>
     <elementParameter field="TEXT" name="CONTEXT_VAR_EXT_JOB_INSTANCE_ID" value=""/>
-    <elementParameter field="CHECK" name="SAVE_CONTEXT_AT_START" value="false"/>
-    <elementParameter field="CHECK" name="DO_NOT_SAVE_PASSWORDS" value="false" show="false"/>
-    <elementParameter field="TEXT" name="RESTART_FROM_JOB_INSTANCE_ID" value="" show="false"/>
+    <elementParameter field="CHECK" name="SAVE_CONTEXT_AT_START" value="true"/>
+    <elementParameter field="CHECK" name="DO_NOT_SAVE_PASSWORDS" value="false"/>
+    <elementParameter field="TEXT" name="RESTART_FROM_JOB_INSTANCE_ID" value=""/>
     <elementParameter field="CHECK" name="SINGLETON_JOB_INSTANCE" value="false"/>
     <elementParameter field="CHECK" name="SINGLETON_JOB_INSTANCE_FOR_WORKITEM" value="false" show="false"/>
     <elementParameter field="LABEL" name="NOTE1" value="Note: You can use the an if trigger with the return value JOB_RUNS_ALONE (boolean) to trigger the process in case no other instance is running or let the process die by triggering a tDie" show="false"/>
@@ -157,20 +157,20 @@
     <elementParameter field="TEXT" name="INITIAL_PREV_RESULT_ITEM" value="&quot;0&quot;" show="false"/>
     <elementParameter field="CHECK" name="SET_UTC_TIMEZONE" value="false"/>
     <elementParameter field="CHECK" name="MEASURE_MEMORY_USAGE" value="false"/>
-    <elementParameter field="CHECK" name="USE_LOG4J" value="false"/>
-    <elementParameter field="FILE" name="LOG4J_CONFIG_FILE" value="&quot;/path/to/log4j.xml&quot;" show="false"/>
-    <elementParameter field="CHECK" name="USE_LOG_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_LOG4J" value="true"/>
+    <elementParameter field="FILE" name="LOG4J_CONFIG_FILE" value="&quot;/path/to/log4j.xml&quot;"/>
+    <elementParameter field="CHECK" name="USE_LOG_FILE" value="false"/>
     <elementParameter field="FILE" name="LOG_FILE_PATH" value="&quot;/var/log/talend/jobs/{project}/{jobName}_{jobInstanceId}.log&quot;" show="false"/>
     <elementParameter field="TEXT" name="LOG_FILE_LAYOUT" value="&quot;%-6r [%15.15t] %-5p %30.30c %x - [%X{origin}] %m%n&quot;" show="false"/>
-    <elementParameter field="CHECK" name="ADD_CONTEXT_TO_MDC" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELPER_NAME" value="" show="false"/>
-    <elementParameter field="CHECK" name="USE_DB_APPENDER" value="false" show="false"/>
-    <elementParameter field="TEXT" name="PATTEN_LAYOUT" value="&quot;[%X{origin}] %m&quot;" show="false"/>
-    <elementParameter field="TEXT" name="LOG_BATCH_UPDATE_MILLIS" value="5000" show="false"/>
-    <elementParameter field="TEXT" name="LOG_BATCH_SIZE" value="100" show="false"/>
-    <elementParameter field="LABEL" name="CATCH_SYSOUT_HINT" value="This setting affects this job and all further jobs in the same VM!" show="false"/>
-    <elementParameter field="CHECK" name="CATCH_SYSOUT" value="true" show="false"/>
-    <elementParameter field="CHECK" name="FORWARD_TO_CONSOLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ADD_CONTEXT_TO_MDC" value="false"/>
+    <elementParameter field="TEXT" name="HELPER_NAME" value=""/>
+    <elementParameter field="CHECK" name="USE_DB_APPENDER" value="true"/>
+    <elementParameter field="TEXT" name="PATTEN_LAYOUT" value="&quot;%m&quot;"/>
+    <elementParameter field="TEXT" name="LOG_BATCH_UPDATE_MILLIS" value="5000"/>
+    <elementParameter field="TEXT" name="LOG_BATCH_SIZE" value="100"/>
+    <elementParameter field="LABEL" name="CATCH_SYSOUT_HINT" value="This setting affects this job and all further jobs in the same VM!"/>
+    <elementParameter field="CHECK" name="CATCH_SYSOUT" value="true"/>
+    <elementParameter field="CHECK" name="FORWARD_TO_CONSOLE" value="true"/>
     <elementParameter field="CHECK" name="SYSOUT_JOB_INSTANCE_ID" value="false"/>
     <elementParameter field="TEXT" name="SYSOUT_JOB_INSTANCE_ID_EXPRESSION" value="&quot;Job: &quot; + jobName + &quot; job_instance_id: &quot; + ((Long) globalMap.get(&quot;tJobInstanceStart_1_JOB_INSTANCE_ID&quot;))" show="false"/>
     <elementParameter field="CHECK" name="DEBUG" value="false"/>
@@ -184,7 +184,7 @@
     <elementParameter field="CHECK" name="IS_AUTO_INCREMENT" value="false"/>
     <elementParameter field="CHECK" name="READ_GENERATED_KEYS" value="true" show="false"/>
     <elementParameter field="TEXT" name="SEQUENCE_EXPRESSION" value="&quot;NEXT VALUE FOR SEQ_JOB_INSTANCE_ID&quot;"/>
-    <elementParameter field="CHECK" name="REDUCE_RESUME_LOGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="REDUCE_RESUME_LOGS" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="JobInstanceStart"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
