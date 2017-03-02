@@ -171,8 +171,8 @@
     <elementParameter field="LABEL" name="CATCH_SYSOUT_HINT" value="This setting affects this job and all further jobs in the same VM!"/>
     <elementParameter field="CHECK" name="CATCH_SYSOUT" value="true"/>
     <elementParameter field="CHECK" name="FORWARD_TO_CONSOLE" value="true"/>
-    <elementParameter field="CHECK" name="SYSOUT_JOB_INSTANCE_ID" value="false"/>
-    <elementParameter field="TEXT" name="SYSOUT_JOB_INSTANCE_ID_EXPRESSION" value="&quot;Job: &quot; + jobName + &quot; job_instance_id: &quot; + ((Long) globalMap.get(&quot;tJobInstanceStart_1_JOB_INSTANCE_ID&quot;))" show="false"/>
+    <elementParameter field="CHECK" name="SYSOUT_JOB_INSTANCE_ID" value="true"/>
+    <elementParameter field="TEXT" name="SYSOUT_JOB_INSTANCE_ID_EXPRESSION" value="&quot;Job: &quot; + jobName + &quot; job_instance_id: &quot; + ((Long) globalMap.get(&quot;tJobInstanceStart_1_JOB_INSTANCE_ID&quot;))"/>
     <elementParameter field="CHECK" name="DEBUG" value="false"/>
     <elementParameter field="CHECK" name="USE_PROJECT_SPECIFIC_NAMES" value="false"/>
     <elementParameter field="TEXT" name="PROJECT_SPECIFIC_NAME_MAP_RESOURCE" value="&quot;my_project&quot;" show="false"/>
