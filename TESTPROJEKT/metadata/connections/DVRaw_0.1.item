@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_5TGbkP9XEea8KYViVm5z8g" name="DVRaw" id="_92uNMP9WEea8KYViVm5z8g" label="DVRaw" dataPackage="_5gfXUP9XEea8KYViVm5z8g" DatabaseType="IBM DB2" DriverClass="com.ibm.db2.jcc.DB2Driver" URL="jdbc:db2://yp-dashdb-small-01-lon02.services.eu-gb.bluemix.net:50000/BLUDB:cursorSensitivity=2;" Port="50000" Username="dash147735" Password="R5Bpxgdo3xSV41ZyKrJpkA==" ServerName="yp-dashdb-small-01-lon02.services.eu-gb.bluemix.net" DatasourceName="" FileFieldName="" SID="BLUDB" SqlSynthax="SQL Syntax" DbmsId="ibmdb2_id" ProductId="IBM_DB2" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="DASH147735">
+    <taggedValue xmi:id="_5THpsP9XEea8KYViVm5z8g" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_5UWYwP9XEea8KYViVm5z8g" tag="package filter" value=""/>
+    <taggedValue xmi:id="_5Ugw0P9XEea8KYViVm5z8g" tag="Status" value=""/>
+    <taggedValue xmi:id="_5Ugw0f9XEea8KYViVm5z8g" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_5Ugw0v9XEea8KYViVm5z8g" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_5Ugw0_9XEea8KYViVm5z8g" tag="Description" value=""/>
+    <taggedValue xmi:id="_5Ugw1P9XEea8KYViVm5z8g" tag="Author" value=""/>
+    <taggedValue xmi:id="_5Ugw1f9XEea8KYViVm5z8g" tag="otherParameter"/>
+    <taggedValue xmi:id="_5aAU0P9XEea8KYViVm5z8g" tag="DB ProductName" value="DB2/LINUXX8664"/>
+    <taggedValue xmi:id="_5aAU0f9XEea8KYViVm5z8g" tag="DB ProductVersion" value="SQL11010"/>
+    <taggedValue xmi:id="_5aAU0v9XEea8KYViVm5z8g" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_5THpsf9XEea8KYViVm5z8g" key="CONN_PARA_KEY_USERNAME" value="dash147735"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_5gfXUP9XEea8KYViVm5z8g" name="DASH147735" dataManager="_5TGbkP9XEea8KYViVm5z8g"/>
+</xmi:XMI>
