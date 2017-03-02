@@ -181,9 +181,9 @@
     <elementParameter field="TEXT" name="TABLE_NAME_CONTEXT" value=""/>
     <elementParameter field="TEXT" name="TABLE_NAME_COUNTER" value=""/>
     <elementParameter field="TEXT" name="MAX_MESSAGE_LENGTH" value="1000"/>
-    <elementParameter field="CHECK" name="IS_AUTO_INCREMENT" value="true"/>
-    <elementParameter field="CHECK" name="READ_GENERATED_KEYS" value="true"/>
-    <elementParameter field="TEXT" name="SEQUENCE_EXPRESSION" value="" show="false"/>
+    <elementParameter field="CHECK" name="IS_AUTO_INCREMENT" value="false"/>
+    <elementParameter field="CHECK" name="READ_GENERATED_KEYS" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SEQUENCE_EXPRESSION" value="NEXT VALUE FOR SEQ_JOB_INSTANCE_ID"/>
     <elementParameter field="CHECK" name="REDUCE_RESUME_LOGS" value="false" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="JobInstanceStart"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
