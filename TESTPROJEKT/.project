@@ -9,4 +9,11 @@
 	<natures>
 		<nature>org.talend.core.talendnature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>temp/DVTemplate_0.1.jobscript</name>
+			<type>1</type>
+			<location>C:/Users/Torsten/workspace/.repositories/957774822/master/TESTPROJEKT/code/jobscripts/DVTemplate_0.1.item</location>
+		</link>
+	</linkedResources>
 </projectDescription>
