@@ -447,7 +447,7 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="SD_Vertrag_Schaden_L"/>
+    <elementParameter field="TEXT" name="LABEL" value="SD_Schaden_Vertrag_L"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDB2Row_1"/>
     <metadata connector="REJECT" name="REJECT">
@@ -499,7 +499,7 @@
     <elementParameter field="TEXT" name="LABEL" value="Lade Link Satelliten"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tDB2Row" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="960">
+  <node componentName="tDB2Row" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="992">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_7" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDB2Connection_1"/>
@@ -527,7 +527,7 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="SD_Vertrag_Schaden_ES"/>
+    <elementParameter field="TEXT" name="LABEL" value="SD_Schaden_Vertrag_ES"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDB2Row_7"/>
     <metadata connector="REJECT" name="REJECT">
@@ -535,7 +535,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tDB2Row" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="1056">
+  <node componentName="tDB2Row" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="1088">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_8" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDB2Connection_1"/>
