@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter name="SCREEN_OFFSET_Y" value="0"/>
+    <elementParameter name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false"/>
+    <elementParameter name="STATANDLOG_USE_PROJECT_SETTINGS" value="false"/>
+    <elementParameter name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Users/Torsten/workspace/in.csv&quot;"/>
+    <elementParameter name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11"/>
+    <elementParameter name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter name="PASS_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter name="DISABLE_ERROR" value="false"/>
+    <elementParameter name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter name="DISABLE_INFO" value="true"/>
+    <elementParameter name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter name="ON_FILES_FLAG" value="false"/>
+    <elementParameter name="FILE_PATH" value="&quot;C:/Users/Torsten/workspace/.metadata&quot;"/>
+    <elementParameter name="FILENAME_STATS" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter name="FILENAME_METTER" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter name="ENCODING" value="ISO-8859-15"/>
+    <elementParameter name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter name="DB_TYPE" value="tJDBCOutput"/>
+    <elementParameter name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter name="URL" value="&quot;&quot;"/>
+    <elementParameter name="DRIVER_CLASS" value="&quot;&quot;"/>
+    <elementParameter name="HOST" value="&quot;&quot;"/>
+    <elementParameter name="PORT" value="&quot;&quot;"/>
+    <elementParameter name="DATASOURCE" value="&quot;&quot;"/>
+    <elementParameter name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter name="USER" value="&quot;&quot;"/>
+    <elementParameter name="PASS" value="&quot;&quot;"/>
+    <elementParameter name="DBFILE" value="&quot;&quot;"/>
+    <elementParameter name="TABLE_STATS" value="&quot;&quot;"/>
+    <elementParameter name="TABLE_LOGS" value="&quot;&quot;"/>
+    <elementParameter name="TABLE_METER" value="&quot;&quot;"/>
+    <elementParameter name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter name="HEADER_ENABLED" value="false"/>
+    <elementParameter name="FOOTER_ENABLED" value="false"/>
+    <routinesParameter id="_uTjsMP9UEea8KYViVm5z8g" name="DataOperation"/>
+    <routinesParameter id="_uVK1wP9UEea8KYViVm5z8g" name="Mathematical"/>
+    <routinesParameter id="_uVY4MP9UEea8KYViVm5z8g" name="Numeric"/>
+    <routinesParameter id="_uVkeYP9UEea8KYViVm5z8g" name="Relational"/>
+    <routinesParameter id="_uWiHsP9UEea8KYViVm5z8g" name="SQLike"/>
+    <routinesParameter id="_uV8R0P9UEea8KYViVm5z8g" name="StringHandling"/>
+    <routinesParameter id="_uWE0sP9UEea8KYViVm5z8g" name="TalendDataGenerator"/>
+    <routinesParameter id="_uWNXkP9UEea8KYViVm5z8g" name="TalendDate"/>
+    <routinesParameter id="_uWY9wP9UEea8KYViVm5z8g" name="TalendString"/>
+  </parameters>
+  <node componentName="tPrejob" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1"/>
+    <elementParameter name="LABEL" value="Prejob"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostjob" offsetLabelX="0" offsetLabelY="0" posX="640" posY="64" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1"/>
+    <elementParameter name="LABEL" value="Postjob"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJobInstanceStart" offsetLabelX="0" offsetLabelY="0" posX="384" posY="64" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJobInstanceStart_1"/>
+    <elementParameter name="USE_DATA_SOURCE" value="false"/>
+    <elementParameter name="DATA_SOURCE_ALIAS" value="&quot;dwh_meta&quot;"/>
+    <elementParameter name="USE_DATA_SOURCE_ALIAS_AS_DBNAME" value="true"/>
+    <elementParameter name="CONNECTION" value="tDB2Connection_1"/>
+    <elementParameter name="CLOSE_CONNECTION" value="false"/>
+    <elementParameter name="JOB_NAME" value="jobName"/>
+    <elementParameter name="EMPTY_WORK_ITEM_IS_NULL" value="false"/>
+    <elementParameter name="SAVE_CONTEXT_AT_START" value="true"/>
+    <elementParameter name="DO_NOT_SAVE_PASSWORDS" value="false"/>
+    <elementParameter name="SINGLETON_JOB_INSTANCE" value="false"/>
+    <elementParameter name="SINGLETON_JOB_INSTANCE_FOR_WORKITEM" value="false"/>
+    <elementParameter name="NOTE1" value="Note: You can use the an if trigger with the return value JOB_RUNS_ALONE (boolean) to trigger the process in case no other instance is running or let the process die by triggering a tDie"/>
+    <elementParameter name="SINGLETON_JOB_INSTANCE_AVOID_JOB_STATUS" value="false"/>
+    <elementParameter name="NOTE2" value="Note: You can avoid a register entry for a job which should actually not run."/>
+    <elementParameter name="RETRIEVE_LAST_RUN_DATA" value="false"/>
+    <elementParameter name="RETRIEVE_LAST_RUN_DATA_SUCCESSFUL" value="false"/>
+    <elementParameter name="RETRIEVE_LAST_RUN_DATA_WITH_DATA" value="false"/>
+    <elementParameter name="RETRIEVE_LAST_RUN_DATA_FOR_WORKITEM" value="false"/>
+    <elementParameter name="COLLECT_SOURCE_INSTANCE_IDS" value="false"/>
+    <elementParameter name="RETRIEVE_LAST_SOURCE_SUCCESSFUL" value="false"/>
+    <elementParameter name="RETRIEVE_LAST_SOURCE_WITH_DATA" value="false"/>
+    <elementParameter name="OK_RESULT_CODES" value="&quot;0&quot;"/>
+    <elementParameter name="INITIAL_PREV_JOB_INSTANCE_ID" value="0l"/>
+    <elementParameter name="INITIAL_PREV_JOB_START_DATE" value="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, &quot;1970-01-01&quot;)"/>
+    <elementParameter name="INITIAL_PREV_TIME_RANGE_END" value="TalendDate.parseDate(&quot;yyyy-MM-dd&quot;, &quot;1970-01-01&quot;)"/>
+    <elementParameter name="INITIAL_PREV_VALUE_RANGE_END" value="&quot;0&quot;"/>
+    <elementParameter name="INITIAL_PREV_RESULT_ITEM" value="&quot;0&quot;"/>
+    <elementParameter name="SET_UTC_TIMEZONE" value="false"/>
+    <elementParameter name="MEASURE_MEMORY_USAGE" value="false"/>
+    <elementParameter name="USE_LOG4J" value="true"/>
+    <elementParameter name="LOG4J_CONFIG_FILE" value="&quot;/path/to/log4j.xml&quot;"/>
+    <elementParameter name="USE_LOG_FILE" value="false"/>
+    <elementParameter name="LOG_FILE_PATH" value="&quot;/var/log/talend/jobs/{project}/{jobName}_{jobInstanceId}.log&quot;"/>
+    <elementParameter name="LOG_FILE_LAYOUT" value="&quot;%-6r [%15.15t] %-5p %30.30c %x - [%X{origin}] %m%n&quot;"/>
+    <elementParameter name="ADD_CONTEXT_TO_MDC" value="true"/>
+    <elementParameter name="USE_DB_APPENDER" value="true"/>
+    <elementParameter name="PATTEN_LAYOUT" value="&quot;%m&quot;"/>
+    <elementParameter name="LOG_BATCH_UPDATE_MILLIS" value="5000"/>
+    <elementParameter name="LOG_BATCH_SIZE" value="100"/>
+    <elementParameter name="CATCH_SYSOUT_HINT" value="This setting affects this job and all further jobs in the same VM!"/>
+    <elementParameter name="CATCH_SYSOUT" value="true"/>
+    <elementParameter name="FORWARD_TO_CONSOLE" value="false"/>
+    <elementParameter name="SYSOUT_JOB_INSTANCE_ID" value="true"/>
+    <elementParameter name="SYSOUT_JOB_INSTANCE_ID_EXPRESSION" value="&quot;Job: &quot; + jobName + &quot; job_instance_id: &quot; + ((Long) globalMap.get(&quot;tJobInstanceStart_1_JOB_INSTANCE_ID&quot;))"/>
+    <elementParameter name="DEBUG" value="false"/>
+    <elementParameter name="USE_PROJECT_SPECIFIC_NAMES" value="false"/>
+    <elementParameter name="PROJECT_SPECIFIC_NAME_MAP_RESOURCE" value="&quot;my_project&quot;"/>
+    <elementParameter name="TABLE_NAME" value="&quot;JOB_INSTANCE_STATUS&quot;"/>
+    <elementParameter name="MAX_MESSAGE_LENGTH" value="1000"/>
+    <elementParameter name="IS_AUTO_INCREMENT" value="false"/>
+    <elementParameter name="READ_GENERATED_KEYS" value="true"/>
+    <elementParameter name="SEQUENCE_EXPRESSION" value="&quot;NEXT VALUE FOR SEQ_JOB_INSTANCE_ID&quot;"/>
+    <elementParameter name="REDUCE_RESUME_LOGS" value="false"/>
+    <elementParameter name="LABEL" value="JobInstanceStart"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJobInstanceEnd" offsetLabelX="0" offsetLabelY="0" posX="800" posY="64" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJobInstanceEnd_1"/>
+    <elementParameter name="USE_SEPARATE_CONNECTION" value="false"/>
+    <elementParameter name="USE_DATA_SOURCE" value="false"/>
+    <elementParameter name="DATA_SOURCE_ALIAS" value="&quot;dwh_meta&quot;"/>
+    <elementParameter name="JOB_START_COMP" value="tJobInstanceStart_1"/>
+    <elementParameter name="SAVE_NAMED_COUNTERS" value="false"/>
+    <elementParameter name="SAVE_CONTEXT_AT_END" value="false"/>
+    <elementParameter name="DO_NOT_SAVE_PASSWORDS" value="false"/>
+    <elementParameter name="CLEANUP_BY_WORKITEM" value="false"/>
+    <elementParameter name="CLOSE_CONNECTION" value="true"/>
+    <elementParameter name="CHECK_ALL_COMPONENTS_FINISHED" value="true"/>
+    <elementParameter name="LABEL" value="JobInstanceEnd"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDB2Connection" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Connection_1"/>
+    <elementParameter name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_92uNMP9WEea8KYViVm5z8g"/>
+    <elementParameter name="HOST" value="&quot;yp-dashdb-small-01-lon02.services.eu-gb.bluemix.net&quot;"/>
+    <elementParameter name="TYPE" value="IBM_DB2"/>
+    <elementParameter name="PORT" value="&quot;50000&quot;"/>
+    <elementParameter name="DBNAME" value="&quot;BLUDB&quot;"/>
+    <elementParameter name="TABLESCHEMA" value="&quot;DASH147735&quot;"/>
+    <elementParameter name="USER" value="&quot;dash147735&quot;"/>
+    <elementParameter name="PASS" value="&quot;5bafdb20794e&quot;"/>
+    <elementParameter name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="AUTO_COMMIT" value="false"/>
+    <elementParameter name="LABEL" value="Db2Verbindung"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDie" offsetLabelX="0" offsetLabelY="0" posX="224" posY="160" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1"/>
+    <elementParameter name="MESSAGE" value="&quot;the end is near&quot;"/>
+    <elementParameter name="CODE" value="4"/>
+    <elementParameter name="PRIORITY" value="5"/>
+    <elementParameter name="EXIT_JVM" value="false"/>
+    <elementParameter name="LABEL" value="Ohne Verbindung"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <node componentName="tParallelize" offsetLabelX="0" offsetLabelY="0" posX="64" posY="352" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_3"/>
+    <elementParameter name="WAIT_FOR" value="All"/>
+    <elementParameter name="SLEEPTIME" value="100"/>
+    <elementParameter name="DIE_ON_ERROR" value="true"/>
+    <elementParameter name="LABEL" value="Lade Hubs"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDB2Row" offsetLabelX="0" offsetLabelY="0" posX="224" posY="288" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_3"/>
+    <elementParameter name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter name="CONNECTION" value="tDB2Connection_1"/>
+    <elementParameter name="HOST" value="&quot;&quot;"/>
+    <elementParameter name="PORT" value="&quot;50000&quot;"/>
+    <elementParameter name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter name="TYPE" value="IBM DB2"/>
+    <elementParameter name="USER" value="&quot;&quot;"/>
+    <elementParameter name="PASS" value="&quot;&quot;"/>
+    <elementParameter name="TABLE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter name="QUERY" value="&quot;select '42' from sysibm.dual&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter name="DIE_ON_ERROR" value="true"/>
+    <elementParameter name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="PROPAGATE_RECORD_SET" value="true"/>
+    <elementParameter name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter name="COMMIT_EVERY" value="10000"/>
+    <elementParameter name="LABEL" value="VT_Vertrag_H"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDB2Row_3"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+    </metadata>
+  </node>
+  <node componentName="tDB2Row" offsetLabelX="0" offsetLabelY="0" posX="224" posY="384" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_4"/>
+    <elementParameter name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter name="CONNECTION" value="tDB2Connection_1"/>
+    <elementParameter name="HOST" value="&quot;&quot;"/>
+    <elementParameter name="PORT" value="&quot;50000&quot;"/>
+    <elementParameter name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter name="TYPE" value="IBM DB2"/>
+    <elementParameter name="USER" value="&quot;&quot;"/>
+    <elementParameter name="PASS" value="&quot;&quot;"/>
+    <elementParameter name="TABLE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter name="QUERY" value="&quot;select '42' from sysibm.dual&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter name="DIE_ON_ERROR" value="true"/>
+    <elementParameter name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter name="COMMIT_EVERY" value="10000"/>
+    <elementParameter name="LABEL" value="SD_Schaden_H"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDB2Row_4"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+    </metadata>
+  </node>
+  <node componentName="tParallelize" offsetLabelX="0" offsetLabelY="0" posX="224" posY="512" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_4"/>
+    <elementParameter name="WAIT_FOR" value="All"/>
+    <elementParameter name="SLEEPTIME" value="100"/>
+    <elementParameter name="DIE_ON_ERROR" value="true"/>
+    <elementParameter name="LABEL" value="Lade Satelliten"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDB2Row" offsetLabelX="0" offsetLabelY="0" posX="416" posY="512" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_5"/>
+    <elementParameter name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter name="CONNECTION" value="tDB2Connection_1"/>
+    <elementParameter name="HOST" value="&quot;&quot;"/>
+    <elementParameter name="PORT" value="&quot;50000&quot;"/>
+    <elementParameter name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter name="TYPE" value="IBM DB2"/>
+    <elementParameter name="USER" value="&quot;&quot;"/>
+    <elementParameter name="PASS" value="&quot;&quot;"/>
+    <elementParameter name="TABLE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter name="QUERY" value="&quot;select '42' from sysibm.dual&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter name="DIE_ON_ERROR" value="true"/>
+    <elementParameter name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter name="RECORD_SET_COLUMN" value="newColumn"/>
+    <elementParameter name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter name="COMMIT_EVERY" value="10000"/>
+    <elementParameter name="LABEL" value="VT_Schadenjournal_S"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDB2Row_5">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+    </metadata>
+  </node>
+  <node componentName="tDB2Row" offsetLabelX="0" offsetLabelY="0" posX="640" posY="640" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_6"/>
+    <elementParameter name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter name="CONNECTION" value="tDB2Connection_1"/>
+    <elementParameter name="HOST" value="&quot;&quot;"/>
+    <elementParameter name="PORT" value="&quot;50000&quot;"/>
+    <elementParameter name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter name="TYPE" value="IBM DB2"/>
+    <elementParameter name="USER" value="&quot;&quot;"/>
+    <elementParameter name="PASS" value="&quot;&quot;"/>
+    <elementParameter name="TABLE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter name="QUERY" value="&quot;select '42' from sysibm.dual&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter name="DIE_ON_ERROR" value="true"/>
+    <elementParameter name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter name="COMMIT_EVERY" value="10000"/>
+    <elementParameter name="LABEL" value="VT_Schaden_Stand_S"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDB2Row_6"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+    </metadata>
+  </node>
+  <node componentName="tParallelize" offsetLabelX="0" offsetLabelY="0" posX="640" posY="768" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_1"/>
+    <elementParameter name="WAIT_FOR" value="All"/>
+    <elementParameter name="SLEEPTIME" value="100"/>
+    <elementParameter name="DIE_ON_ERROR" value="true"/>
+    <elementParameter name="LABEL" value="Lade Links"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDB2Row" offsetLabelX="0" offsetLabelY="0" posX="832" posY="768" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_1"/>
+    <elementParameter name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter name="CONNECTION" value="tDB2Connection_1"/>
+    <elementParameter name="HOST" value="&quot;&quot;"/>
+    <elementParameter name="PORT" value="&quot;50000&quot;"/>
+    <elementParameter name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter name="TYPE" value="IBM DB2"/>
+    <elementParameter name="USER" value="&quot;&quot;"/>
+    <elementParameter name="PASS" value="&quot;&quot;"/>
+    <elementParameter name="TABLE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter name="QUERY" value="&quot;select '42' from sysibm.dual&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter name="DIE_ON_ERROR" value="true"/>
+    <elementParameter name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter name="COMMIT_EVERY" value="10000"/>
+    <elementParameter name="LABEL" value="SD_Schaden_Vertrag_L"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDB2Row_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+    </metadata>
+  </node>
+  <node componentName="tDB2Row" offsetLabelX="0" offsetLabelY="0" posX="832" posY="864" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_2"/>
+    <elementParameter name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter name="CONNECTION" value="tDB2Connection_1"/>
+    <elementParameter name="HOST" value="&quot;&quot;"/>
+    <elementParameter name="PORT" value="&quot;50000&quot;"/>
+    <elementParameter name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter name="TYPE" value="IBM DB2"/>
+    <elementParameter name="USER" value="&quot;&quot;"/>
+    <elementParameter name="PASS" value="&quot;&quot;"/>
+    <elementParameter name="TABLE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter name="QUERY" value="&quot;select '42' from sysibm.dual&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter name="DIE_ON_ERROR" value="true"/>
+    <elementParameter name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter name="COMMIT_EVERY" value="10000"/>
+    <elementParameter name="LABEL" value="SD_Schaden_Bearbeiter_L"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDB2Row_2"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+    </metadata>
+  </node>
+  <node componentName="tParallelize" offsetLabelX="0" offsetLabelY="0" posX="832" posY="992" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_2"/>
+    <elementParameter name="WAIT_FOR" value="All"/>
+    <elementParameter name="SLEEPTIME" value="100"/>
+    <elementParameter name="DIE_ON_ERROR" value="false"/>
+    <elementParameter name="LABEL" value="Lade Link Satelliten"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDB2Row" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="992" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_7"/>
+    <elementParameter name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter name="CONNECTION" value="tDB2Connection_1"/>
+    <elementParameter name="HOST" value="&quot;&quot;"/>
+    <elementParameter name="PORT" value="&quot;50000&quot;"/>
+    <elementParameter name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter name="TYPE" value="IBM DB2"/>
+    <elementParameter name="USER" value="&quot;&quot;"/>
+    <elementParameter name="PASS" value="&quot;&quot;"/>
+    <elementParameter name="TABLE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter name="QUERY" value="&quot;select '42' from sysibm.dual&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter name="DIE_ON_ERROR" value="true"/>
+    <elementParameter name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter name="COMMIT_EVERY" value="10000"/>
+    <elementParameter name="LABEL" value="SD_Schaden_Vertrag_ES"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDB2Row_7"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+    </metadata>
+  </node>
+  <node componentName="tDB2Row" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="1088" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_8"/>
+    <elementParameter name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter name="CONNECTION" value="tDB2Connection_1"/>
+    <elementParameter name="HOST" value="&quot;&quot;"/>
+    <elementParameter name="PORT" value="&quot;50000&quot;"/>
+    <elementParameter name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter name="TYPE" value="IBM DB2"/>
+    <elementParameter name="USER" value="&quot;&quot;"/>
+    <elementParameter name="PASS" value="&quot;&quot;"/>
+    <elementParameter name="TABLE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter name="QUERY" value="&quot;select '42' from sysibm.dual&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter name="DIE_ON_ERROR" value="true"/>
+    <elementParameter name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter name="COMMIT_EVERY" value="10000"/>
+    <elementParameter name="LABEL" value="SD_Schaden_Bearbeiter_ES"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDB2Row_8"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1"/>
+    </metadata>
+  </node>
+  <node componentName="tParallelize" offsetLabelX="0" offsetLabelY="0" posX="416" posY="640" sizeX="32" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_5"/>
+    <elementParameter name="WAIT_FOR" value="All"/>
+    <elementParameter name="SLEEPTIME" value="100"/>
+    <elementParameter name="DIE_ON_ERROR" value="true"/>
+    <elementParameter name="LABEL" value="Lade Satelliten 2nd Phase"/>
+    <elementParameter name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" mergeOrder="0" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" outputId="0" source="tPrejob_1" target="tDB2Connection_1">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" mergeOrder="0" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" outputId="0" source="tPostjob_1" target="tJobInstanceEnd_1">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" mergeOrder="0" metaname="tDB2Connection_1" offsetLabelX="0" offsetLabelY="0" outputId="0" source="tDB2Connection_1" target="tJobInstanceStart_1">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" mergeOrder="0" metaname="tDB2Connection_1" offsetLabelX="0" offsetLabelY="0" outputId="0" source="tDB2Connection_1" target="tDie_1">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" mergeOrder="0" metaname="tParallelize_3" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tParallelize_3" target="tDB2Row_3">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" mergeOrder="0" metaname="tParallelize_3" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tParallelize_3" target="tDB2Row_4">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="SYNCHRONIZE" label="Synchronize" lineStyle="12" mergeOrder="0" metaname="tParallelize_3" offsetLabelX="0" offsetLabelY="0" outputId="0" source="tParallelize_3" target="tParallelize_4">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" mergeOrder="0" metaname="tParallelize_4" offsetLabelX="0" offsetLabelY="0" outputId="0" source="tParallelize_4" target="tDB2Row_5">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="SYNCHRONIZE" label="Synchronize" lineStyle="12" mergeOrder="0" metaname="tParallelize_4" offsetLabelX="0" offsetLabelY="0" outputId="0" source="tParallelize_4" target="tParallelize_5">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" mergeOrder="0" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tParallelize_1" target="tDB2Row_1">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" mergeOrder="0" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tParallelize_1" target="tDB2Row_2">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="SYNCHRONIZE" label="Synchronize" lineStyle="12" mergeOrder="0" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="0" source="tParallelize_1" target="tParallelize_2">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" mergeOrder="0" metaname="tParallelize_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tParallelize_2" target="tDB2Row_7">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" mergeOrder="0" metaname="tParallelize_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tParallelize_2" target="tDB2Row_8">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" mergeOrder="0" metaname="tParallelize_5" offsetLabelX="0" offsetLabelY="0" outputId="0" source="tParallelize_5" target="tDB2Row_6">
+    <elementParameter/>
+  </connection>
+  <connection connectorName="SYNCHRONIZE" label="Synchronize" lineStyle="12" mergeOrder="0" metaname="tParallelize_5" offsetLabelX="0" offsetLabelY="0" outputId="0" source="tParallelize_5" target="tParallelize_1">
+    <elementParameter/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1"/>
+    <elementParameter name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1"/>
+    <elementParameter name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJobInstanceStart_1"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJobInstanceEnd_1"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Connection_1"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_3"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_3"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_4"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_4"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_5"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_6"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_1"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_1"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_2"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_2"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_7"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDB2Row_8"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tParallelize_5"/>
+    <elementParameter name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
