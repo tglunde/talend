@@ -1,0 +1,1159 @@
+SCRIPT_VERSION=4.2,
+JobType= Standard,
+DEFAULT_CONTEXT: Default,
+ContextType {
+	NAME: Default
+}
+addParameters {
+	addElementParameters {
+		SCREEN_OFFSET_X : "0",
+		SCREEN_OFFSET_Y : "0",,,,,,,,,,,,,,,,
+		IMPLICITCONTEXT_USE_PROJECT_SETTINGS : "false",
+		STATANDLOG_USE_PROJECT_SETTINGS : "false",
+		MULTI_THREAD_EXECATION : "false",
+		PARALLELIZE_UNIT_SIZE : "25000",
+		IMPLICIT_TCONTEXTLOAD : "false",
+		FROM_FILE_FLAG_IMPLICIT_CONTEXT : "false",
+		FROM_DATABASE_FLAG_IMPLICIT_CONTEXT : "false",
+		IMPLICIT_TCONTEXTLOAD_FILE : "\"C:/Users/Torsten/workspace/in.csv\"",
+		FIELDSEPARATOR : "\";\"",,
+		DB_VERSION_IMPLICIT_CONTEXT : "ORACLE_11",
+		URL_IMPLICIT_CONTEXT : "\"\"",,
+		DRIVER_CLASS_IMPLICIT_CONTEXT : "\"\"",
+		HOST_IMPLICIT_CONTEXT : "\"\"",
+		PORT_IMPLICIT_CONTEXT : "\"\"",
+		DBNAME_IMPLICIT_CONTEXT : "\"\"",
+		LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT : "\"\"",
+		PROPERTIES_IMPLICIT_CONTEXT : "\"\"",
+		SCHEMA_DB_IMPLICIT_CONTEXT : "\"\"",
+		USER_IMPLICIT_CONTEXT : "\"\"",
+		PASS_IMPLICIT_CONTEXT : "0RMsyjmybrE=",
+		DBFILE_IMPLICIT_CONTEXT : "\"\"",
+		DBTABLE_IMPLICIT_CONTEXT : "\"\"",
+		QUERY_CONDITION_IMPLICIT_CONTEXT : "\"\"",
+		LOAD_NEW_VARIABLE : "Warning",
+		NOT_LOAD_OLD_VARIABLE : "Warning",
+		PRINT_OPERATIONS : "false",
+		DISABLE_ERROR : "false",
+		DISABLE_WARNINGS : "true",
+		DISABLE_INFO : "true",
+		ON_STATCATCHER_FLAG : "false",
+		ON_LOGCATCHER_FLAG : "false",
+		ON_METERCATCHER_FLAG : "false",
+		ON_CONSOLE_FLAG : "false",
+		ON_FILES_FLAG : "false",
+		FILE_PATH : "\"C:/Users/Torsten/workspace/.metadata\"",
+		FILENAME_STATS : "\"stats_file.txt\"",
+		FILENAME_LOGS : "\"logs_file.txt\"",
+		FILENAME_METTER : "\"meter_file.txt\"",
+		ENCODING : "ISO-8859-15",
+		ENCODING:ENCODING_TYPE : "ISO-8859-15",
+		ON_DATABASE_FLAG : "false",
+		DB_TYPE : "tJDBCOutput",
+		DB_VERSION : "ORACLE_11",
+		URL : "\"\"",,
+		DRIVER_CLASS : "\"\"",
+		HOST : "\"\"",
+		PORT : "\"\"",
+		DATASOURCE : "\"\"",
+		DBNAME : "\"\"",
+		LOCAL_SERVICE_NAME : "\"\"",
+		PROPERTIES : "\"\"",
+		SCHEMA_DB : "\"\"",
+		USER : "\"\"",
+		PASS : "0RMsyjmybrE=",
+		DBFILE : "\"\"",
+		TABLE_STATS : "\"\"",
+		TABLE_LOGS : "\"\"",
+		TABLE_METER : "\"\"",
+		CATCH_RUNTIME_ERRORS : "true",
+		CATCH_USER_ERRORS : "true",
+		CATCH_USER_WARNING : "true",
+		CATCH_REALTIME_STATS : "false",,
+		HEADER_ENABLED : "false",,,,,
+		FOOTER_ENABLED : "false",,,
+	}
+	addRoutinesParameters {
+		addRoutinesParameter {
+			NAME: "DataOperation"
+		}
+		addRoutinesParameter {
+			NAME: "Mathematical"
+		}
+		addRoutinesParameter {
+			NAME: "Numeric"
+		}
+		addRoutinesParameter {
+			NAME: "Relational"
+		}
+		addRoutinesParameter {
+			NAME: "SQLike"
+		}
+		addRoutinesParameter {
+			NAME: "StringHandling"
+		}
+		addRoutinesParameter {
+			NAME: "TalendDataGenerator"
+		}
+		addRoutinesParameter {
+			NAME: "TalendDate"
+		}
+		addRoutinesParameter {
+			NAME: "TalendString"
+		}
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tPrejob",
+		NAME: "tPrejob_1",
+		POSITION: 96, 64,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		LABEL : "Prejob",
+		CONNECTION_FORMAT : "row"
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tPostjob",
+		NAME: "tPostjob_1",
+		POSITION: 640, 64,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		LABEL : "Postjob",
+		CONNECTION_FORMAT : "row"
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tJobInstanceStart",
+		NAME: "tJobInstanceStart_1",
+		POSITION: 384, 64,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		USE_DATA_SOURCE : "false",
+		DATA_SOURCE_ALIAS : "\"dwh_meta\"",
+		USE_DATA_SOURCE_ALIAS_AS_DBNAME : "true",
+		CONNECTION : "tDB2Connection_1",
+		CLOSE_CONNECTION : "false",
+		JOB_NAME : "jobName",,,,
+		EMPTY_WORK_ITEM_IS_NULL : "false",,,,,,,,
+		SAVE_CONTEXT_AT_START : "true",
+		DO_NOT_SAVE_PASSWORDS : "false",,
+		SINGLETON_JOB_INSTANCE : "false",
+		SINGLETON_JOB_INSTANCE_FOR_WORKITEM : "false",
+		NOTE1 :
+		"Note: You can use the an if trigger with the return value JOB_RUNS_ALONE (boolean) to trigger the process in case no other instance is running or let the process die by triggering a tDie",
+		SINGLETON_JOB_INSTANCE_AVOID_JOB_STATUS : "false",
+		NOTE2 :
+		"Note: You can avoid a register entry for a job which should actually not run.",
+		RETRIEVE_LAST_RUN_DATA : "false",
+		RETRIEVE_LAST_RUN_DATA_SUCCESSFUL : "false",
+		RETRIEVE_LAST_RUN_DATA_WITH_DATA : "false",
+		RETRIEVE_LAST_RUN_DATA_FOR_WORKITEM : "false",
+		COLLECT_SOURCE_INSTANCE_IDS : "false",
+		RETRIEVE_LAST_SOURCE_SUCCESSFUL : "false",
+		RETRIEVE_LAST_SOURCE_WITH_DATA : "false",,
+		OK_RESULT_CODES : "\"0\"",
+		INITIAL_PREV_JOB_INSTANCE_ID : "0l",
+		INITIAL_PREV_JOB_START_DATE :
+		"TalendDate.parseDate(\"yyyy-MM-dd\", \"1970-01-01\")",
+		INITIAL_PREV_TIME_RANGE_END :
+		"TalendDate.parseDate(\"yyyy-MM-dd\", \"1970-01-01\")",
+		INITIAL_PREV_VALUE_RANGE_END : "\"0\"",
+		INITIAL_PREV_RESULT_ITEM : "\"0\"",
+		SET_UTC_TIMEZONE : "false",
+		MEASURE_MEMORY_USAGE : "false",
+		USE_LOG4J : "true",
+		LOG4J_CONFIG_FILE : "\"/path/to/log4j.xml\"",
+		USE_LOG_FILE : "false",
+		LOG_FILE_PATH :
+		"\"/var/log/talend/jobs/{project}/{jobName}_{jobInstanceId}.log\"",
+		LOG_FILE_LAYOUT : "\"%-6r [%15.15t] %-5p %30.30c %x - [%X{origin}] %m%n\"",
+		ADD_CONTEXT_TO_MDC : "true",,
+		USE_DB_APPENDER : "true",
+		PATTEN_LAYOUT : "\"%m\"",
+		LOG_BATCH_UPDATE_MILLIS : "5000",
+		LOG_BATCH_SIZE : "100",
+		CATCH_SYSOUT_HINT :
+		"This setting affects this job and all further jobs in the same VM!",
+		CATCH_SYSOUT : "true",
+		FORWARD_TO_CONSOLE : "false",
+		SYSOUT_JOB_INSTANCE_ID : "true",
+		SYSOUT_JOB_INSTANCE_ID_EXPRESSION :
+		"\"Job: \" + jobName + \" job_instance_id: \" + ((Long) globalMap.get(\"tJobInstanceStart_1_JOB_INSTANCE_ID\"))",
+		DEBUG : "false",
+		USE_PROJECT_SPECIFIC_NAMES : "false",
+		PROJECT_SPECIFIC_NAME_MAP_RESOURCE : "\"my_project\"",,
+		TABLE_NAME : "\"JOB_INSTANCE_STATUS\"",,,
+		MAX_MESSAGE_LENGTH : "1000",
+		IS_AUTO_INCREMENT : "false",
+		READ_GENERATED_KEYS : "true",
+		SEQUENCE_EXPRESSION : "\"NEXT VALUE FOR SEQ_JOB_INSTANCE_ID\"",
+		REDUCE_RESUME_LOGS : "false",
+		LABEL : "JobInstanceStart",
+		CONNECTION_FORMAT : "row"
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tJobInstanceEnd",
+		NAME: "tJobInstanceEnd_1",
+		POSITION: 800, 64,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		USE_SEPARATE_CONNECTION : "false",
+		USE_DATA_SOURCE : "false",
+		DATA_SOURCE_ALIAS : "\"dwh_meta\"",,
+		JOB_START_COMP : "tJobInstanceStart_1",,,,,,
+		SAVE_NAMED_COUNTERS : "false",
+		SAVE_CONTEXT_AT_END : "false",
+		DO_NOT_SAVE_PASSWORDS : "false",
+		CLEANUP_BY_WORKITEM : "false",
+		CLOSE_CONNECTION : "true",
+		CHECK_ALL_COMPONENTS_FINISHED : "true",,,,,,
+		LABEL : "JobInstanceEnd",
+		CONNECTION_FORMAT : "row"
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tDB2Connection",
+		NAME: "tDB2Connection_1",
+		POSITION: 224, 64,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		PROPERTY:PROPERTY_TYPE : "REPOSITORY",
+		PROPERTY:REPOSITORY_PROPERTY_TYPE : "_92uNMP9WEea8KYViVm5z8g",
+		HOST : "\"yp-dashdb-small-01-lon02.services.eu-gb.bluemix.net\"",
+		TYPE : "IBM_DB2",
+		PORT : "\"50000\"",
+		DBNAME : "\"BLUDB\"",
+		TABLESCHEMA : "\"DASH147735\"",
+		USER : "\"dash147735\"",
+		PASS : "RG/fVAjNNyu5AYoONijJvg==",
+		ENCODING : "\"ISO-8859-15\"",
+		ENCODING:ENCODING_TYPE : "ISO-8859-15",
+		USE_SHARED_CONNECTION : "false",,
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		SPECIFY_DATASOURCE_ALIAS : "false",
+		DATASOURCE_ALIAS : "\"\"",
+		PROPERTIES : "\"\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		AUTO_COMMIT : "false",
+		LABEL : "Db2Verbindung",
+		CONNECTION_FORMAT : "row"
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tDie",
+		NAME: "tDie_1",
+		POSITION: 224, 160,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		MESSAGE : "\"the end is near\"",
+		CODE : "4",
+		PRIORITY : "5",
+		EXIT_JVM : "false",
+		LABEL : "Ohne Verbindung",
+		CONNECTION_FORMAT : "row"
+	}
+	addSchema {
+		NAME: "tDie_1",
+		CONNECTOR: "FLOW"
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tParallelize",
+		NAME: "tParallelize_3",
+		POSITION: 64, 352,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		WAIT_FOR : "All",
+		SLEEPTIME : "100",
+		DIE_ON_ERROR : "true",
+		LABEL : "Lade Hubs",
+		CONNECTION_FORMAT : "row"
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tDB2Row",
+		NAME: "tDB2Row_3",
+		POSITION: 224, 288,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		USE_EXISTING_CONNECTION : "true",
+		CONNECTION : "tDB2Connection_1",
+		HOST : "\"\"",
+		PORT : "\"50000\"",
+		DBNAME : "\"\"",
+		TYPE : "IBM DB2",
+		USER : "\"\"",
+		PASS : "0RMsyjmybrE=",
+		TABLE : "\"\"",
+		QUERYSTORE : "\"\"",,
+		QUERYSTORE:QUERYSTORE_TYPE : "BUILT_IN",
+		QUERY : "\"select '42' from sysibm.dual\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		SPECIFY_DATASOURCE_ALIAS : "false",
+		DATASOURCE_ALIAS : "\"\"",
+		DIE_ON_ERROR : "true",
+		PROPERTIES : "\"\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		PROPAGATE_RECORD_SET : "true",,
+		USE_PREPAREDSTATEMENT : "false",,
+		ENCODING : "\"ISO-8859-15\"",
+		ENCODING:ENCODING_TYPE : "ISO-8859-15",
+		COMMIT_EVERY : "10000",
+		LABEL : "VT_Vertrag_H",
+		CONNECTION_FORMAT : "row"
+	}
+	addSchema {
+		NAME: "tDB2Row_3",
+		CONNECTOR: "FLOW"
+	}
+	addSchema {
+		NAME: "REJECT",
+		CONNECTOR: "REJECT"
+		addColumn {
+			NAME: "errorCode",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+		addColumn {
+			NAME: "errorMessage",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tDB2Row",
+		NAME: "tDB2Row_4",
+		POSITION: 224, 384,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		USE_EXISTING_CONNECTION : "true",
+		CONNECTION : "tDB2Connection_1",
+		HOST : "\"\"",
+		PORT : "\"50000\"",
+		DBNAME : "\"\"",
+		TYPE : "IBM DB2",
+		USER : "\"\"",
+		PASS : "0RMsyjmybrE=",
+		TABLE : "\"\"",
+		QUERYSTORE : "\"\"",,
+		QUERYSTORE:QUERYSTORE_TYPE : "BUILT_IN",
+		QUERY : "\"select '42' from sysibm.dual\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		SPECIFY_DATASOURCE_ALIAS : "false",
+		DATASOURCE_ALIAS : "\"\"",
+		DIE_ON_ERROR : "true",
+		PROPERTIES : "\"\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		PROPAGATE_RECORD_SET : "false",,
+		USE_PREPAREDSTATEMENT : "false",,
+		ENCODING : "\"ISO-8859-15\"",
+		ENCODING:ENCODING_TYPE : "ISO-8859-15",
+		COMMIT_EVERY : "10000",
+		LABEL : "SD_Schaden_H",
+		CONNECTION_FORMAT : "row"
+	}
+	addSchema {
+		NAME: "tDB2Row_4",
+		CONNECTOR: "FLOW"
+	}
+	addSchema {
+		NAME: "REJECT",
+		CONNECTOR: "REJECT"
+		addColumn {
+			NAME: "errorCode",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+		addColumn {
+			NAME: "errorMessage",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tParallelize",
+		NAME: "tParallelize_4",
+		POSITION: 224, 512,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		WAIT_FOR : "All",
+		SLEEPTIME : "100",
+		DIE_ON_ERROR : "true",
+		LABEL : "Lade Satelliten",
+		CONNECTION_FORMAT : "row"
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tDB2Row",
+		NAME: "tDB2Row_5",
+		POSITION: 416, 512,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		USE_EXISTING_CONNECTION : "true",
+		CONNECTION : "tDB2Connection_1",
+		HOST : "\"\"",
+		PORT : "\"50000\"",
+		DBNAME : "\"\"",
+		TYPE : "IBM DB2",
+		USER : "\"\"",
+		PASS : "0RMsyjmybrE=",
+		TABLE : "\"\"",
+		QUERYSTORE : "\"\"",,
+		QUERYSTORE:QUERYSTORE_TYPE : "BUILT_IN",
+		QUERY : "\"select '42' from sysibm.dual\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		SPECIFY_DATASOURCE_ALIAS : "false",
+		DATASOURCE_ALIAS : "\"\"",
+		DIE_ON_ERROR : "true",
+		PROPERTIES : "\"\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		PROPAGATE_RECORD_SET : "false",
+		RECORD_SET_COLUMN : "newColumn",
+		USE_PREPAREDSTATEMENT : "false",,
+		ENCODING : "\"ISO-8859-15\"",
+		ENCODING:ENCODING_TYPE : "ISO-8859-15",
+		COMMIT_EVERY : "10000",
+		LABEL : "VT_Schadenjournal_S",
+		CONNECTION_FORMAT : "row"
+	}
+	addSchema {
+		NAME: "tDB2Row_5",
+		CONNECTOR: "FLOW"
+		addColumn {
+			NAME: "newColumn",
+			TYPE: "id_String",
+			NULLABLE: true,
+			LENGTH: -1,
+			COMMENT: "",
+			PATTERN: "",
+			PRECISION: -1,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+	}
+	addSchema {
+		NAME: "REJECT",
+		CONNECTOR: "REJECT"
+		addColumn {
+			NAME: "newColumn",
+			TYPE: "id_String",
+			NULLABLE: true,
+			LENGTH: -1,
+			COMMENT: "",
+			PATTERN: "",
+			PRECISION: -1,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+		addColumn {
+			NAME: "errorCode",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+		addColumn {
+			NAME: "errorMessage",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tDB2Row",
+		NAME: "tDB2Row_6",
+		POSITION: 640, 640,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		USE_EXISTING_CONNECTION : "true",
+		CONNECTION : "tDB2Connection_1",
+		HOST : "\"\"",
+		PORT : "\"50000\"",
+		DBNAME : "\"\"",
+		TYPE : "IBM DB2",
+		USER : "\"\"",
+		PASS : "0RMsyjmybrE=",
+		TABLE : "\"\"",
+		QUERYSTORE : "\"\"",,
+		QUERYSTORE:QUERYSTORE_TYPE : "BUILT_IN",
+		QUERY : "\"select '42' from sysibm.dual\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		SPECIFY_DATASOURCE_ALIAS : "false",
+		DATASOURCE_ALIAS : "\"\"",
+		DIE_ON_ERROR : "true",
+		PROPERTIES : "\"\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		PROPAGATE_RECORD_SET : "false",,
+		USE_PREPAREDSTATEMENT : "false",,
+		ENCODING : "\"ISO-8859-15\"",
+		ENCODING:ENCODING_TYPE : "ISO-8859-15",
+		COMMIT_EVERY : "10000",
+		LABEL : "VT_Schaden_Stand_S",
+		CONNECTION_FORMAT : "row"
+	}
+	addSchema {
+		NAME: "tDB2Row_6",
+		CONNECTOR: "FLOW"
+	}
+	addSchema {
+		NAME: "REJECT",
+		CONNECTOR: "REJECT"
+		addColumn {
+			NAME: "errorCode",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+		addColumn {
+			NAME: "errorMessage",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tParallelize",
+		NAME: "tParallelize_1",
+		POSITION: 640, 768,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		WAIT_FOR : "All",
+		SLEEPTIME : "100",
+		DIE_ON_ERROR : "true",
+		LABEL : "Lade Links",
+		CONNECTION_FORMAT : "row"
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tDB2Row",
+		NAME: "tDB2Row_1",
+		POSITION: 832, 768,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		USE_EXISTING_CONNECTION : "true",
+		CONNECTION : "tDB2Connection_1",
+		HOST : "\"\"",
+		PORT : "\"50000\"",
+		DBNAME : "\"\"",
+		TYPE : "IBM DB2",
+		USER : "\"\"",
+		PASS : "0RMsyjmybrE=",
+		TABLE : "\"\"",
+		QUERYSTORE : "\"\"",,
+		QUERYSTORE:QUERYSTORE_TYPE : "BUILT_IN",
+		QUERY : "\"select '42' from sysibm.dual\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		SPECIFY_DATASOURCE_ALIAS : "false",
+		DATASOURCE_ALIAS : "\"\"",
+		DIE_ON_ERROR : "true",
+		PROPERTIES : "\"\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		PROPAGATE_RECORD_SET : "false",,
+		USE_PREPAREDSTATEMENT : "false",,
+		ENCODING : "\"ISO-8859-15\"",
+		ENCODING:ENCODING_TYPE : "ISO-8859-15",
+		COMMIT_EVERY : "10000",
+		LABEL : "SD_Schaden_Vertrag_L",
+		CONNECTION_FORMAT : "row"
+	}
+	addSchema {
+		NAME: "tDB2Row_1",
+		CONNECTOR: "FLOW"
+	}
+	addSchema {
+		NAME: "REJECT",
+		CONNECTOR: "REJECT"
+		addColumn {
+			NAME: "errorCode",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+		addColumn {
+			NAME: "errorMessage",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tDB2Row",
+		NAME: "tDB2Row_2",
+		POSITION: 832, 864,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		USE_EXISTING_CONNECTION : "true",
+		CONNECTION : "tDB2Connection_1",
+		HOST : "\"\"",
+		PORT : "\"50000\"",
+		DBNAME : "\"\"",
+		TYPE : "IBM DB2",
+		USER : "\"\"",
+		PASS : "0RMsyjmybrE=",
+		TABLE : "\"\"",
+		QUERYSTORE : "\"\"",,
+		QUERYSTORE:QUERYSTORE_TYPE : "BUILT_IN",
+		QUERY : "\"select '42' from sysibm.dual\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		SPECIFY_DATASOURCE_ALIAS : "false",
+		DATASOURCE_ALIAS : "\"\"",
+		DIE_ON_ERROR : "true",
+		PROPERTIES : "\"\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		PROPAGATE_RECORD_SET : "false",,
+		USE_PREPAREDSTATEMENT : "false",,
+		ENCODING : "\"ISO-8859-15\"",
+		ENCODING:ENCODING_TYPE : "ISO-8859-15",
+		COMMIT_EVERY : "10000",
+		LABEL : "SD_Schaden_Bearbeiter_L",
+		CONNECTION_FORMAT : "row"
+	}
+	addSchema {
+		NAME: "tDB2Row_2",
+		CONNECTOR: "FLOW"
+	}
+	addSchema {
+		NAME: "REJECT",
+		CONNECTOR: "REJECT"
+		addColumn {
+			NAME: "errorCode",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+		addColumn {
+			NAME: "errorMessage",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tParallelize",
+		NAME: "tParallelize_2",
+		POSITION: 832, 992,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		WAIT_FOR : "All",
+		SLEEPTIME : "100",
+		DIE_ON_ERROR : "false",
+		LABEL : "Lade Link Satelliten",
+		CONNECTION_FORMAT : "row"
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tDB2Row",
+		NAME: "tDB2Row_7",
+		POSITION: 1056, 992,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		USE_EXISTING_CONNECTION : "true",
+		CONNECTION : "tDB2Connection_1",
+		HOST : "\"\"",
+		PORT : "\"50000\"",
+		DBNAME : "\"\"",
+		TYPE : "IBM DB2",
+		USER : "\"\"",
+		PASS : "0RMsyjmybrE=",
+		TABLE : "\"\"",
+		QUERYSTORE : "\"\"",,
+		QUERYSTORE:QUERYSTORE_TYPE : "BUILT_IN",
+		QUERY : "\"select '42' from sysibm.dual\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		SPECIFY_DATASOURCE_ALIAS : "false",
+		DATASOURCE_ALIAS : "\"\"",
+		DIE_ON_ERROR : "true",
+		PROPERTIES : "\"\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		PROPAGATE_RECORD_SET : "false",,
+		USE_PREPAREDSTATEMENT : "false",,
+		ENCODING : "\"ISO-8859-15\"",
+		ENCODING:ENCODING_TYPE : "ISO-8859-15",
+		COMMIT_EVERY : "10000",
+		LABEL : "SD_Schaden_Vertrag_ES",
+		CONNECTION_FORMAT : "row"
+	}
+	addSchema {
+		NAME: "tDB2Row_7",
+		CONNECTOR: "FLOW"
+	}
+	addSchema {
+		NAME: "REJECT",
+		CONNECTOR: "REJECT"
+		addColumn {
+			NAME: "errorCode",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+		addColumn {
+			NAME: "errorMessage",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tDB2Row",
+		NAME: "tDB2Row_8",
+		POSITION: 1056, 1088,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		USE_EXISTING_CONNECTION : "true",
+		CONNECTION : "tDB2Connection_1",
+		HOST : "\"\"",
+		PORT : "\"50000\"",
+		DBNAME : "\"\"",
+		TYPE : "IBM DB2",
+		USER : "\"\"",
+		PASS : "0RMsyjmybrE=",
+		TABLE : "\"\"",
+		QUERYSTORE : "\"\"",,
+		QUERYSTORE:QUERYSTORE_TYPE : "BUILT_IN",
+		QUERY : "\"select '42' from sysibm.dual\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		SPECIFY_DATASOURCE_ALIAS : "false",
+		DATASOURCE_ALIAS : "\"\"",
+		DIE_ON_ERROR : "true",
+		PROPERTIES : "\"\"",
+		NOTE :
+		"This option only applies when deploying and running in the Talend Runtime",
+		PROPAGATE_RECORD_SET : "false",,
+		USE_PREPAREDSTATEMENT : "false",,
+		ENCODING : "\"ISO-8859-15\"",
+		ENCODING:ENCODING_TYPE : "ISO-8859-15",
+		COMMIT_EVERY : "10000",
+		LABEL : "SD_Schaden_Bearbeiter_ES",
+		CONNECTION_FORMAT : "row"
+	}
+	addSchema {
+		NAME: "tDB2Row_8",
+		CONNECTOR: "FLOW"
+	}
+	addSchema {
+		NAME: "REJECT",
+		CONNECTOR: "REJECT"
+		addColumn {
+			NAME: "errorCode",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+		addColumn {
+			NAME: "errorMessage",
+			TYPE: "id_String",
+			NULLABLE: true,
+			DEFAULTVALUE: "",
+			LENGTH: 255,
+			PRECISION: 0,
+			SOURCETYPE: "",
+			ORIGINALLEHGTH: -1
+		}
+	}
+}
+addComponent {
+	setComponentDefinition {
+		TYPE: "tParallelize",
+		NAME: "tParallelize_5",
+		POSITION: 416, 640,
+		SIZE: 32, 32,
+		OFFSETLABEL: 0, 0
+	}
+	setSettings {
+		WAIT_FOR : "All",
+		SLEEPTIME : "100",
+		DIE_ON_ERROR : "true",
+		LABEL : "Lade Satelliten 2nd Phase",
+		CONNECTION_FORMAT : "row"
+	}
+}
+addConnection {
+	TYPE: "COMPONENT_OK",
+	NAME: "OnComponentOk",
+	LINESTYLE: 3,
+	METANAME: "tPrejob_1",
+	SOURCE: "tPrejob_1",
+	TARGET: "tDB2Connection_1",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "COMPONENT_OK",
+	NAME: "OnComponentOk",
+	LINESTYLE: 3,
+	METANAME: "tPostjob_1",
+	SOURCE: "tPostjob_1",
+	TARGET: "tJobInstanceEnd_1",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "SUBJOB_OK",
+	NAME: "OnSubjobOk",
+	LINESTYLE: 1,
+	METANAME: "tDB2Connection_1",
+	SOURCE: "tDB2Connection_1",
+	TARGET: "tJobInstanceStart_1",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "SUBJOB_ERROR",
+	NAME: "OnSubjobError",
+	LINESTYLE: 4,
+	METANAME: "tDB2Connection_1",
+	SOURCE: "tDB2Connection_1",
+	TARGET: "tDie_1",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "PARALLELIZE",
+	NAME: "Parallelize",
+	LINESTYLE: 13,
+	METANAME: "tParallelize_3",
+	OUTPUTID: 1,
+	SOURCE: "tParallelize_3",
+	TARGET: "tDB2Row_3",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "PARALLELIZE",
+	NAME: "Parallelize",
+	LINESTYLE: 13,
+	METANAME: "tParallelize_3",
+	OUTPUTID: 2,
+	SOURCE: "tParallelize_3",
+	TARGET: "tDB2Row_4",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "SYNCHRONIZE",
+	NAME: "Synchronize",
+	LINESTYLE: 12,
+	METANAME: "tParallelize_3",
+	SOURCE: "tParallelize_3",
+	TARGET: "tParallelize_4",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "PARALLELIZE",
+	NAME: "Parallelize",
+	LINESTYLE: 13,
+	METANAME: "tParallelize_4",
+	SOURCE: "tParallelize_4",
+	TARGET: "tDB2Row_5",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "SYNCHRONIZE",
+	NAME: "Synchronize",
+	LINESTYLE: 12,
+	METANAME: "tParallelize_4",
+	SOURCE: "tParallelize_4",
+	TARGET: "tParallelize_5",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "PARALLELIZE",
+	NAME: "Parallelize",
+	LINESTYLE: 13,
+	METANAME: "tParallelize_1",
+	OUTPUTID: 1,
+	SOURCE: "tParallelize_1",
+	TARGET: "tDB2Row_1",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "PARALLELIZE",
+	NAME: "Parallelize",
+	LINESTYLE: 13,
+	METANAME: "tParallelize_1",
+	OUTPUTID: 2,
+	SOURCE: "tParallelize_1",
+	TARGET: "tDB2Row_2",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "SYNCHRONIZE",
+	NAME: "Synchronize",
+	LINESTYLE: 12,
+	METANAME: "tParallelize_1",
+	SOURCE: "tParallelize_1",
+	TARGET: "tParallelize_2",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "PARALLELIZE",
+	NAME: "Parallelize",
+	LINESTYLE: 13,
+	METANAME: "tParallelize_2",
+	OUTPUTID: 1,
+	SOURCE: "tParallelize_2",
+	TARGET: "tDB2Row_7",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "PARALLELIZE",
+	NAME: "Parallelize",
+	LINESTYLE: 13,
+	METANAME: "tParallelize_2",
+	OUTPUTID: 2,
+	SOURCE: "tParallelize_2",
+	TARGET: "tDB2Row_8",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "PARALLELIZE",
+	NAME: "Parallelize",
+	LINESTYLE: 13,
+	METANAME: "tParallelize_5",
+	SOURCE: "tParallelize_5",
+	TARGET: "tDB2Row_6",
+	OFFSETLABEL: 0, 0,
+}
+addConnection {
+	TYPE: "SYNCHRONIZE",
+	NAME: "Synchronize",
+	LINESTYLE: 12,
+	METANAME: "tParallelize_5",
+	SOURCE: "tParallelize_5",
+	TARGET: "tParallelize_1",
+	OFFSETLABEL: 0, 0,
+}
+addSubjob {
+	NAME: "tPrejob_1"
+	SHOW_SUBJOB_TITLE : "true",
+	SUBJOB_TITLE_COLOR : "230;100;0",
+	SUBJOB_COLOR : "255;220;180"
+}
+addSubjob {
+	NAME: "tPostjob_1"
+	SHOW_SUBJOB_TITLE : "true",
+	SUBJOB_TITLE_COLOR : "230;100;0",
+	SUBJOB_COLOR : "255;220;180"
+}
+addSubjob {
+	NAME: "tJobInstanceStart_1"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tJobInstanceEnd_1"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tDB2Connection_1"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tDie_1"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tParallelize_3"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tDB2Row_3"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tDB2Row_4"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tParallelize_4"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tDB2Row_5"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tDB2Row_6"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tParallelize_1"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tDB2Row_1"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tDB2Row_2"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tParallelize_2"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tDB2Row_7"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tDB2Row_8"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
+addSubjob {
+	NAME: "tParallelize_5"
+	SUBJOB_TITLE_COLOR : "92;131;150",
+	SUBJOB_COLOR : "207;226;236"
+}
